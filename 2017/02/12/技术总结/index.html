@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>技术总结 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="前言
+
+　　大约在几个月之前，让我看完了《webkit技术内幕》这本书的时候，突然有了一个想法。想把整个web前端开发所需要的知识都之中在一个视图中，形成一个完整的web前端知识体系，目的是想要颠覆人们对于前端只有三大块（html、css、js）的认识——做web前端需要的比这三大块要多得多。
+　　拖了好几个月了，但是由于近期将要参加的某一个活动，我不得不这两天把这个东西整出来。说干就干。上午我">
+<meta property="og:type" content="article">
+<meta property="og:title" content="技术总结">
+<meta property="og:url" content="http://chengshaodong.github.io/2017/02/12/技术总结/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="前言
+
+　　大约在几个月之前，让我看完了《webkit技术内幕》这本书的时候，突然有了一个想法。想把整个web前端开发所需要的知识都之中在一个视图中，形成一个完整的web前端知识体系，目的是想要颠覆人们对于前端只有三大块（html、css、js）的认识——做web前端需要的比这三大块要多得多。
+　　拖了好几个月了，但是由于近期将要参加的某一个活动，我不得不这两天把这个东西整出来。说干就干。上午我">
+<meta property="og:updated_time" content="2017-02-12T07:55:35.259Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="技术总结">
+<meta name="twitter:description" content="前言
+
+　　大约在几个月之前，让我看完了《webkit技术内幕》这本书的时候，突然有了一个想法。想把整个web前端开发所需要的知识都之中在一个视图中，形成一个完整的web前端知识体系，目的是想要颠覆人们对于前端只有三大块（html、css、js）的认识——做web前端需要的比这三大块要多得多。
+　　拖了好几个月了，但是由于近期将要参加的某一个活动，我不得不这两天把这个东西整出来。说干就干。上午我">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Søk"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://chengshaodong.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-技术总结" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/02/12/技术总结/" class="article-date">
+  <time datetime="2017-02-12T07:51:08.000Z" itemprop="datePublished">2017-02-12</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      技术总结
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ol>
+<li>前言</li>
+</ol>
+<p>　　大约在几个月之前，让我看完了《webkit技术内幕》这本书的时候，突然有了一个想法。想把整个web前端开发所需要的知识都之中在一个视图中，形成一个完整的web前端知识体系，目的是想要颠覆人们对于前端只有三大块（html、css、js）的认识——做web前端需要的比这三大块要多得多。</p>
+<p>　　拖了好几个月了，但是由于近期将要参加的某一个活动，我不得不这两天把这个东西整出来。说干就干。上午我就开始在办公室画草图，乱七八糟的在那儿理思路。</p>
+<p>　　</p>
+<p>　　大家不要害怕，其实下文中的这个知识框架要比草图中的好看的多，草图大家权当没看见。</p>
+<p>　　好了，废话不扯。下面请跟随我本博客的内容，来看看web前端开发除了htm、css和js之外，还有哪些东西需要你一步一步去掌握。</p>
+<p>　　</p>
+<p>　　在看内容之前，先看一下这个知识框架的预览图。图太大不好展示，看不清除，可在此下载清晰版：<a href="http://pan.baidu.com/s/1hqIUvUc" target="_blank" rel="external">http://pan.baidu.com/s/1hqIUvUc</a> （内有整个知识体系的图片和xmind文件）</p>
+<p>　　</p>
+<ol>
+<li>分类</li>
+</ol>
+<p>　　所有知识框架，那肯定是一个结构型的展现，就是一棵树。web前端的知识点非常多，也非常散，需要好几层结构来组织这个体系，否则就会显得很乱。那么如何组织、把谁和谁放在一块儿？这是真正值得我们去思考的，你也可以自己来思考一下这个问题。</p>
+<p>　　在我总结的这个知识框架中，首先第一层我划分为：理论知识，类库框架，编码开发，运行环境。如下图：</p>
+<p>　　</p>
+<p>　　接下来给大家解释一下：</p>
+<p>　　这个图要从下往上看，为何？——因为下面是上面的基础；<br>•首先，我们需要一定的理论知识，不管是你听别人讲授、自己看书还是网上淘资料，你都需要一定的理论知识，每一种程序开发，都避免不了。<br>•第二，有了这些理论知识我们就可以编码了——不错——but，没有人能抵挡住第三方框架和类库的诱惑，例如jquery；<br>•第三，有了这些理论知识和协助我们的类库框架，我们就可真正的编码了。大家可能以为编码开发不就是写代码吗，还有啥？——这里面道道多着呢；<br>•最后，开发程序的目的，最终是为了能高效、稳定的运行在相应的环境中，这其中又有哪些事情需要我们去做？请期待；</p>
+<ol>
+<li>理论知识 包括“软知识”和“硬知识”</li>
+</ol>
+<p>　　“软知识”和“硬知识”大家可能觉得词陌生，其实我一说大家就能明白。</p>
+<p>　　<br>•所谓“软”的就是能在各个程序开发中都用到的，算是基本功、内功，例如数据结构、算法、设计模式、面向对象等等；<br>•所谓“硬”的就是能直接用于本程序开发的。用C语言你就得学C语言语法，此时学java没用。我们web前端开发所需要的硬知识其实都包含在三个标准里面：http标准、W3C标准和ECMAScript标准；</p>
+<ol>
+<li>聊一聊web前端开发中的“硬知识”</li>
+</ol>
+<p>　　“软知识”的内容非常多，也是我们大学时代学习的重点（没学好是另回事儿，毕业再恶补）。我们本次主要讨论的是web前端这一个方向，因此就点到为止，让大家知道这些知识也在知识体系中扮演重要角色。</p>
+<p>　　刚才说道，硬知识有三个标准：http标准、W3C标准和ECMAScript标准，那咱们就挨个聊聊这三个标准。</p>
+<p>4.1 http标准</p>
+<p>　　为什么做web前端要了解http标准？——因为浏览器要从服务端获取网页，网页也可能将信息再提交给服务器，这其中都有http的连接。web系统既然和http链接有瓜葛，你就必须去了解它。</p>
+<p>　　</p>
+<p>　　我的意见是：你不必去非常了解http的详细内容，但是你要了解web前端开发常用的一些http的知识——就是上图中我列出来的那些。当然，我知识列了一个纲，详细内容还得靠你自己去查阅（本文章讲的是知识框架，不会涉及任何知识点的详细内容）</p>
+<p>　　关于这方面的知识，建议去查阅《图解http》这本书，浅显易懂的讲述了这些内容，我曾经也看过。</p>
+<p>4.2 W3C标准</p>
+<p>　　如果说你只知道web前端的一个标准，估计肯定是W3C标准了（据我了解，貌似大部分人真的都只知道这一个标准）。它的内容非常多，看看www.w3.org/TR/这个页面。</p>
+<p>　　写到这里让我想起了一句话：2/8原则——20%的功能满足80%的需求。我觉得这句话用到这里非常合适，我们在平时开发过程中根本用不到这么多东西。反而，你要把平时用的多的东西搞懂了。</p>
+<p>　　下图的这些知识，我想不用再过多解释了，这就是我文章开发说的“三大块”（html、css、js）。现在你要知道，它们只不多是W3C标准的一部分，而W3C标准也只是web前端开发知识体系中的一部分而已。</p>
+<p>　　（下图没有完全展开，想看权展开的图，可下载本文一开始提供的附件）</p>
+<p>　　</p>
+<p>　　关于CSS的基础知识，毛遂自荐一下自己之前的一篇系列博客：《CSS知多少》</p>
+<p>4.3 ECMAScript　　</p>
+<p>　　简称ES，写全称太麻烦了。</p>
+<p>　　有些人可能只知道javascript，而不知道ES——其实，js是在ES的基础上，为web浏览器做了一部分封装（增加了DOM操作、BOM操作等）。</p>
+<p>　　</p>
+<p>　　如上图中的这些概念，大家可能平时都在javascript中看到，其实他们是ES的内容。只不过javascript继承了ES的这些特性，并且javascript用的比较广泛，因此才会在js中讨论的多一些。</p>
+<p>　　还是那个“2/8原则”。其实ES中的内容也非常多，而且更新很快，现在都到ES6了。但是我上图中列出来的这些都是最重要的概念。如果你不懂原型、闭包和作用域，那就说明你还不完全了解ES，也就是不完全会用javascript。</p>
+<p>　　在此毛遂自荐自己之前的一篇系列博客，大家可以去参考：《深入理解javascript原型和闭包系列》</p>
+<ol>
+<li>框架和类库</li>
+</ol>
+<p>　　前面已经描述完了web前端开发所需要的理论知识。如何实践呢？——不能蛮干——还得绕世界去看看，有哪些大牛已经为我们做出了如此多的贡献。</p>
+<p>　　用下面的这些类库或者框架，能大大提高你的开发效率。</p>
+<p>　　<br>•首先，jquery一定是大部分web前端开发者不可或缺的工具。而我利用jquery不仅仅停留在只使用它的API和插件上，我还会自己去写jquery插件，我还会去读jquery的源码、了解jquery的设计思路。如果你也能那样做，请相信我，你会收获到意想不到的效果。如果有一个问题：怎样才能最最透彻的理解javascript的事件系统？最佳答案之一：读几遍（一遍可能读不懂）jquery关于事件处理部分的源码！<br>•bootstrap不用再过多解释了吧，从github上的排名也能看出道道来。甚至连我们公司的UI设计师，都从bootstrap上截图作为素材。<br>•fontAwesome是全世界最强大的图标系统。相比于css制作图标来说，这个要好很多倍，不管是开发、效率还是维护上。icomoon.io能让我自定义选择自己的图标文件。<br>•requirejs和seajs这种模块定义系统，也一定是你系统中不可或缺的。我曾经看过一个教程，讲师就说：requirejs带来了既jquery之后的第二次前端技术变革。<br>•其他的，backbone、angular、react这些也慢慢的开始发挥了他们的价值，此处精力有限就不再赘述了——但是，他们很重要——你至少要试着去了解它们。</p>
+<ol>
+<li>编码开发</li>
+</ol>
+<p>　　要问编码IDE哪家强，当然要属微软的visual studio！但是即便是微软的VS最新版本，它也代替不了下面要说的这套开发环境。</p>
+<p>　　</p>
+<p>　　如果你专门做web前端，就不要在用vs了，当然要选择sublime。写html语句还用手动一条一条写吗？你得需要zencoding的协助，否则效率太差了。</p>
+<p>　　另外，针对html、css、js的压缩、合并、语法检查，文件的清除、复制这些操作，你还要手动去做吗？——你需要grunt或者gulp的帮助。</p>
+<p>　　在此毛遂自荐自己的教程《用grunt搭建自动化web开发环境》，讲的比较详细，适合初学者学习。</p>
+<p>　　如果你的系统中有比较多的js代码或者文件，请选择一个合适的模块定义规范——CMD / AMD</p>
+<p>　　请用git来帮助你做文件版本管理，最简单的就是使用github。</p>
+<p>　　调试、测试，也都有专门的工具，都是需要学的……</p>
+<p>　　——我的天哪……这些字写到现在写的我的手都酸了，别说要学习这些知识了——再也别说我们web前端是“三大块”了！</p>
+<ol>
+<li>运行环境</li>
+</ol>
+<p>　　当系统真正到了运行环境中，当你觉得终于完事儿的时候，其实还有好几个知识点需要你掌握。看下图：</p>
+<p>　　</p>
+<p>　　首先，你要知道web系统虽然大部分是在浏览器下运行，但是js可能会被运行在node环境。</p>
+<p>　　在浏览器环境下，最重要的两点是：web安全和性能优化。需要注意的纲要我都列出来了，如果想了解推荐两本书《白帽子将web安全》《高性能网站建设指南》</p>
+<ol>
+<li>其他</li>
+</ol>
+<p>　　以上这些是全部的知识体系。如果你想成为一名合格的、让leader喜欢的程序猿，你除了知道这些知识之外，我觉得还需要以下几点：<br>•要了解敏捷软件开发流程（如SCRUM）和项目管理知识（如考取PMP），这也属于一种“软”知识吧；<br>•要学会在网上和别人交流（博客、qq群、开源项目），交流能让自己看到自己的不足；<br>•要学会自我反省和自我学习。就像我现在一样，试着自己总结一下属于自己的东西，随时反省随时进步。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://chengshaodong.github.io/2017/02/12/技术总结/" data-id="ciz2dpzkf0001b4nkhtfi3jsf" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2017/02/12/2016总结，2017展望/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          2016总结，2017展望
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/02/12/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Arkiv</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/02/">February 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Siste innlegg</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/02/12/2016总结，2017展望/">2016总结，2017展望</a>
+          </li>
+        
+          <li>
+            <a href="/2017/02/12/技术总结/">技术总结</a>
+          </li>
+        
+          <li>
+            <a href="/2017/02/12/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
